@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#holder {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 18px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 200;
+}
+
+.contactInfo ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contactInfo.skill .percent,
+.contactInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+
+.contactInfo.skill .percent div,
+.contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.container .right-Side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.about,
+.education,
+.course {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  color: #333;
+}
+
+.education ul,
+.course ul {
+  position: relative;
+}
+
+.education ul li,
+.course ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  color: #333;
+}
+
+.education ul li .icon,
+.course ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #003147;
+}
+
+.course ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fas {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 30px;
+}
+
+.footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+.inner-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links ul {
+  padding: 10px;
+  display: flex;
+  width: 400px;
+  height: 30px;
+  margin: auto;
+}
+
+.social-items {
+  list-style: none;
+}
+
+.social-items a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #003147;
+  text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
